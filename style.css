@@ -377,58 +377,104 @@ footer.section {
 footer a:hover {
     color: var(--main-color);
 }
+/* MODAL */
 
-footer a.logo {
-    margin-top: -2.5rem;
-    display: block;
+.button{
+    background: coral;
+    padding: 1em 2em;
+    color: white;
+    border: 0;
 }
 
-footer a.logo:hover {
-    color: unset;
+.button:hover{
+    background: #333;
 }
 
-.social-list {
+/* Partie Modal */
+.modal{
+
+    
+    display: none;
+
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    /* l'ombre overlay. Le réglage de l'opacité est la dernière valeur de la parenthese */
+    background-color: rgba( 0,0, 0, 0.7);
+}
+
+/* Gestion de la taille de la modale */
+.modal-content {
+    background-color: #000000;
+    border-radius: 10px;
+    margin: 1% auto;
+   
+    /* mon width qui gere la largeur de ma modal */
+    width: 44%;
+    height: 95%;
+    /* l ombre de ma modal */
+    box-shadow: 0 5px 8px 0 rgba( 0,0, 0, 0.2);
+}
+
+/* reglages pour le bouton de fermeture */
+
+.closeBtn{
+    color: #ccc;
+    /* Choix de son côté */
+    float: right;
+    font-size: 30px;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+
+    color: rgb(29, 29, 29);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.photo_modal{
+    
+
+    border-radius: 14px;
+   
+}
+
+.film-modal-title{
+    padding: 0.8em 0 0 0.8em;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 28px;
+}
+
+#simpleModal .movie-info {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-left: 17px;
 }
 
-.social-item {
-    --size: 30px;
-    height: var(--size);
-    width: var(--size);
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    background-color: var(--text-color);
-    color: var(--main-color);
+.item-content-description.modal-description{
+    padding: 1.1em 0 0 1.1em;
+    margin: 0;
+    font-weight: 400;
 }
 
-.social-item:hover {
-    background-color: var(--main-color);
-    color: var(--text-color);
+.btn.btn-hover.btn-modal{
+
+    top: -6em;
+    left: 5%;
+    
 }
 
-.social-item ~ .social-item {
-    margin-left: 20px;
-}
 
-footer .content {
-    margin-top: 20px;
-}
-
-.footer-menu {
-    list-style-type: none;
-}
-
-.footer-menu a {
-    display: inline-block;
-    transition: transform 0.2s ease-in-out;
-}
-
-.footer-menu a:hover {
-    transform: translateX(5px);
-}
 
 .discover {
     font-size: 20px;
@@ -439,6 +485,12 @@ footer .content {
     justify-content: flex-end; 
 }
 
+
+.boutton_x_modal_responsive {
+    display: none;       
+ }
+
+/* *************************************************************************************** */
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1280px) {
@@ -514,4 +566,54 @@ footer .content {
     .nav-menu.active {
         left: 0;
     }
+
+    .modal-content{
+        background:rgb(2,0,36);
+    }
+    .modal-content {
+        background-color: black;
+        border-radius: 10px;
+        margin: 1% auto;
+        height: 95%;
+        width: auto;    
+        box-shadow: 0 5px 8px 0 rgba( 0,0, 0, 0.2);
+    }
+    .modal{
+
+    
+        display: none;
+    
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        /* l'ombre overlay. Le réglage de l'opacité est la dernière valeur de la parenthese */
+        background-color: rgba( 0,0, 0, 0.7);
+        
+    }
+
+    .btn {
+        color: #ffffff;
+        padding: 0.25rem 1.5rem;
+        font-size: 1.25rem;
+        display: inline-flex;
+        position: relative;
+        align-items: center;
+        background-color: var(--main-color);
+        border-radius: 15px;;
+        
+    }
+
+    .boutton_x_modal_responsive {
+        display: block;
+        position: absolute;
+        font-size: 24px;
+        right: 1em;
+        color: #ccc;        
+     }
+
+
 }

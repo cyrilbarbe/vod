@@ -47,14 +47,14 @@
         <!-- Le HERO Slide -->
         <div class="hero-slide">
             <div class="owl-carousel carousel-nav-center" id="hero-carousel">
-                <!-- SLIDE ITEM -->
+                <!--Video       1-->
                 <div class="hero-slide-item">
                     <img src="./images/gm3.jpg" alt="">
                     <div class="overlay"></div>
                     <div class="hero-slide-item-content">
                         <div class="item-content-wraper">
                             <div class="item-content-title top-down">
-                                Lorem Ipsum
+                                Gaston Monnerville
                             </div>
                             <div class="movie-infos top-down delay-2">
  
@@ -71,7 +71,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus eius. Deserunt non odit, cum vero reprehenderit laudantium odio vitae autem quam, incidunt molestias ratione mollitia accusantium, facere ab suscipit.
                             </div>
                             <div class="item-action top-down delay-6">
-                                <a href="#" class="btn btn-hover">
+                                <a href="#" class="btn btn-hover" id="modalBtn">
                                     <i class="bx bxs-right-arrow"></i>
                                     <span>Lecture</span>
                                 </a>
@@ -79,15 +79,15 @@
                         </div>
                     </div>
                 </div>
-                <!-- END SLIDE ITEM -->
-                <!-- SLIDE ITEM -->
+                <!-- FIN VIDEO 1 -->
+                <!-- VIDEO      2-->
                 <div class="hero-slide-item">
                     <img src="./images/gaston.jpg" alt="">
                     <div class="overlay"></div>
                     <div class="hero-slide-item-content">
                         <div class="item-content-wraper">
                             <div class="item-content-title top-down">
-                                Lorem ipsum
+                                Expostion nationale
                             </div>
                             <div class="movie-infos top-down delay-2">
  
@@ -103,8 +103,9 @@
                             <div class="item-content-description top-down delay-4">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus eius. Deserunt non odit, cum vero reprehenderit laudantium odio vitae autem quam, incidunt molestias ratione mollitia accusantium, facere ab suscipit.
                             </div>
+
                             <div class="item-action top-down delay-6">
-                                <a href="#" class="btn btn-hover">
+                                <a href="#" class="btn btn-hover" id="modalBtn">
                                     <i class="bx bxs-right-arrow"></i>
                                     <span>Lecture</span>
                                 </a>
@@ -112,15 +113,15 @@
                         </div>
                     </div>
                 </div>
-                <!-- END SLIDE ITEM -->
-                <!-- SLIDE ITEM -->
+                <!-- FIN VIDEO 2 -->
+                <!-- VIDEO 3 -->
                 <div class="hero-slide-item">
                     <img src="./images/gaston.png" alt="">
                     <div class="overlay"></div>
                     <div class="hero-slide-item-content">
                         <div class="item-content-wraper">
                             <div class="item-content-title top-down">
-                                Lorem Ipsum
+                                Documentaire
                             </div>
                             <div class="movie-infos top-down delay-2">
  
@@ -137,7 +138,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus eius. Deserunt non odit, cum vero reprehenderit laudantium odio vitae autem quam, incidunt molestias ratione mollitia accusantium, facere ab suscipit.
                             </div>
                             <div class="item-action top-down delay-6">
-                                <a href="#" class="btn btn-hover">
+                                <a href="#" class="btn btn-hover" id="modalBtn">
                                     <i class="bx bxs-right-arrow"></i>
                                     <span>Lecture</span>
                                 </a>
@@ -145,7 +146,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- END SLIDE ITEM -->
+                <!-- FIN VIDEO 3 -->
             </div>
         </div>
         <!-- FIN DU SLIDE-->
@@ -806,6 +807,45 @@
     </div>
     <!-- fin Section Politique -->
 
+    <!-- MODAL EN DISPLAY NONE DANS LE CSS -->
+
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <div class="boutton_x_modal_responsive">
+                <a href="">
+               &times;
+            </a>
+            </div>
+            <div id="photo__modal">
+                <div class="item-action delay-6">
+                </div>
+                <img src="images/gaston.jpg" alt=""class="photo_modal">
+                <a href="#" class="btn btn-hover btn-modal">
+                    <i class="bx bxs-right-arrow"></i>
+                    <span>Lecture</span>
+                </a>
+            </div>
+            <div id="description_film_modal">
+                <div class="film-modal-title">Lorem ipsum</div>
+                <div class="movie-infos delay-2">
+
+                    <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                    </div>
+
+                    <div class="movie-info">
+                        <span>Histoire</span>
+                    </div>
+                </div>
+                <div class="item-content-description modal-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus eius. Deserunt non odit, cum vero reprehenderit laudantium odio vitae autem quam, incidunt molestias ratione mollitia accusantium, facere ab suscipit.</div>
+                <div id="lorem"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- FIN MODAL -->
     <!-- FOOTER SECTION Provisoire A EFFACER-->
     <footer class="section">
         <div class="container">
@@ -829,7 +869,8 @@
     ></script>
     <!-- Notre script JS -->
     <script src="script.js"></script>
-
+    <!-- Script Modal -->
+    <script src="modal.js"></script>
 </body>
 
 </html>
