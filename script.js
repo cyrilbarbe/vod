@@ -1,10 +1,6 @@
+
+
 $(document).ready(() => {
-    // Menu burger
-   
-    $('#hamburger-menu').click(() => {
-        $('#hamburger-menu').toggleClass('active')
-        $('#nav-menu').toggleClass('active')
-    })
 
     // Owl carrousel Reglage J query
 
@@ -60,3 +56,8 @@ $(document).ready(() => {
         }
     })
 })
+
+
+
+
+
