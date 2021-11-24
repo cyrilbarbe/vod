@@ -51,6 +51,12 @@ img {
     margin: auto;
 }
 
+.container-categorie {
+    max-width: 1920px;
+    padding: 0 40px;
+    padding-top: 70px;
+}
+
 
 /* Le overlay. Surcouche pour que les titres puissent POP */
 .overlay {
@@ -301,6 +307,14 @@ Sans les titres et descritpion de la partie hero ne seront tous simplement pas v
     overflow: hidden;
     padding-top: 56%;
     cursor: pointer;
+    
+}
+
+
+/* Selection des vignettes de la page categorie */
+.categorie.carousel-nav-center.owl-carousel .movie-item{
+   border-radius: 14px;
+   
 }
 
 
@@ -311,7 +325,13 @@ Sans les titres et descritpion de la partie hero ne seront tous simplement pas v
     left: 0;
     width: 100%;
     transition: transform 0.3s linear;
+    
+   
 }
+
+/* gestion des vignettees de categories */
+
+
 /* Effet zoom sur image */
 .movie-item:hover img {
     transform: scale(1.2);
@@ -347,12 +367,17 @@ Sans les titres et descritpion de la partie hero ne seront tous simplement pas v
 
 .section {
     padding-top: 80px;
+    
 }
+
 
 .covidsection{
     padding-top: 20px;
 }
 
+.categoriesection{
+    padding-top: 1px;
+}
 
 /* Section  header*
 Pour gerer le titre des categories*/
@@ -486,9 +511,15 @@ line-height: 28px;
 }
 
 
-.boutton_x_modal_responsive {
-    display: none;       
+.modal-content > .boutton_x_modal_responsive {
+    position: relative;
+    float: right;  
+    left: -23px;
+    top: 43px; 
+    font-size: 28px;
+    color: #ccc;    
  }
+
 
 /* *************************************************************************************** */
 /* RESPONSIVE */

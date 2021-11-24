@@ -16,7 +16,7 @@ $(document).ready(() => {
         autoplayHoverPause: true
     })
 
-
+//Partie permettant de gerer les vignettes de vidéos et meme leur espacement via le margin
 // Item: c'est le nombre de vignette que l'on desire
     $('.movies-slide').owlCarousel({
         items: 2,
@@ -36,7 +36,7 @@ $(document).ready(() => {
             }
         }
     })
-
+// Partie covid
     $('.covid').owlCarousel({
         items: 2,
         dots: false,
@@ -49,6 +49,25 @@ $(document).ready(() => {
             },
             1280: {
                 items: 4
+            },
+            1600: {
+                items: 6
+            }
+        }
+    })
+
+    $('.categorie').owlCarousel({
+        items: 2,
+        dots: false,
+        nav:true,
+        navText: navText,
+        margin: 6 ,
+        responsive: {
+            500: {
+                items: 2
+            },
+            1280: {
+                items: 5
             },
             1600: {
                 items: 6
