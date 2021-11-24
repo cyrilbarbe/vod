@@ -20,5 +20,5 @@ function openModal(){
 function clickHorsModal(e){
     if(e.target==modal){
         modal.style.display = 'none';
-    }
+ }
 }
